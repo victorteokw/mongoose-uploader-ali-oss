@@ -1,5 +1,5 @@
 {
-  "name": "mongoose-uploader-aliyun",
+  "name": "mongoose-uploader-ali-oss",
   "version": "0.0.1",
   "description": "mongoose uploader for Aliyun OSS",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhangkaiyulw/mongoose-uploader-aliyun.git"
+    "url": "git+https://github.com/zhangkaiyulw/mongoose-uploader-ali-oss.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zhangkaiyulw/mongoose-uploader-aliyun/issues"
+    "url": "https://github.com/zhangkaiyulw/mongoose-uploader-ali-oss/issues"
   },
-  "homepage": "https://github.com/zhangkaiyulw/mongoose-uploader-aliyun#readme",
+  "homepage": "https://github.com/zhangkaiyulw/mongoose-uploader-ali-oss#readme",
   "dependencies": {
     "ali-oss": "^6.0.1"
   },
