@@ -1,6 +1,6 @@
 const OSS = require('ali-oss');
 
-const createAliyunUploader = (config) => {
+const createAliOSSUploader = (config) => {
   const client = new OSS({
     region: config.region,
     bucket: config.bucket,
@@ -26,4 +26,4 @@ const createAliyunUploader = (config) => {
   return { upload };
 };
 
-module.exports = { createAliyunUploader };
+module.exports = { createAliOSSUploader };
