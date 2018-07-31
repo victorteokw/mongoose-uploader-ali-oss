@@ -23,7 +23,10 @@ const createAliOSSUploader = (config) => {
       encoding
     };
   };
-  return { upload };
+  const remove = async (file) => {
+    await client.delete(file.filename);
+  };
+  return { upload, remove };
 };
 
 module.exports = { createAliOSSUploader };
