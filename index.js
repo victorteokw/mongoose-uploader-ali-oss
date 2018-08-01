@@ -14,7 +14,7 @@ const createAliOSSUploader = (config) => {
   });
   const host = () =>
     config.host || `https://${config.bucket}.${config.region}.aliyuncs.com`;
-  const upload = async (upload) => {
+  const upload = async function(upload) {
     const { stream, filename, mimetype, encoding } = await upload;
     const newFileName = this.storePath(filename) + '/' + this.filename(filename);
     const result = await client.putStream(newFileName, stream);
@@ -25,7 +25,7 @@ const createAliOSSUploader = (config) => {
       encoding
     };
   };
-  const remove = async (file) => {
+  const remove = async function(file) {
     await client.delete(file.filename);
   };
   return Object.assign({}, baseUploader, { upload, remove });
