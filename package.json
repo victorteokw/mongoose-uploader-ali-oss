@@ -1,6 +1,6 @@
 {
   "name": "mongoose-uploader-ali-oss",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mongoose uploader for Aliyun OSS",
   "main": "index.js",
   "scripts": {
@@ -22,5 +22,8 @@
   "devDependencies": {
     "eslint": "^5.2.0",
     "eslint-config-man": "^1.0.2"
+  },
+  "peerDependencies": {
+    "mongoose-uploader": ">=0.0.3"
   }
 }
