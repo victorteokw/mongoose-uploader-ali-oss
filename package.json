@@ -1,6 +1,6 @@
 {
   "name": "mongoose-uploader-ali-oss",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "mongoose uploader for Aliyun OSS",
   "main": "index.js",
   "scripts": {

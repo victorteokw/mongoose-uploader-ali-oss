@@ -1,5 +1,6 @@
 const OSS = require('ali-oss');
 const baseUploader = require('mongoose-uploader/lib/baseUploader');
+const path = require('path');
 
 const createAliOSSUploader = (config) => {
   const client = new OSS({
@@ -16,7 +17,7 @@ const createAliOSSUploader = (config) => {
     config.host || `https://${config.bucket}.${config.region}.aliyuncs.com`;
   const upload = async function(upload) {
     const { stream, filename, mimetype, encoding } = await upload;
-    const newFileName = this.storePath(filename) + '/' + this.filename(filename);
+    const newFileName = path.join(this.storePath(filename), this.filename(filename));
     const result = await client.putStream(newFileName, stream);
     return {
       url: host() + newFileName,
